@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatBot.Views.InforPage1">
+    <NavigationPage.TitleView>
+        <Label Text="Nhập thông tin cá nhân"
+               TextColor="Red"
+               FontAttributes="Bold"
+               FontSize="17"></Label>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid  Margin="20,100,20,50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Label Text="Nhập thông tin"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               BackgroundColor="White" 
+                               Grid.Row="0"
+                               Grid.ColumnSpan="2"
+                               />
+                <Label Text="Họ tên:"
+                               FontSize="15"
+                                Grid.Row="1"
+                               Grid.ColumnSpan="2" 
+                               />
+                <Entry Placeholder="Nhập họ tên..."
+                                Grid.Row="2"
+                               Grid.ColumnSpan="2" 
+                               />
+                <Label Text="Tuổi:"
+                                Grid.Row="3"
+                               Grid.ColumnSpan="2" 
+                               />
+                <Entry Placeholder="Nhập số tuổi..."
+                                Grid.Row="4"
+                               Grid.ColumnSpan="2"
+                               />
+                <Label Text="Nghề nghiệp:"
+                                Grid.Row="5"
+                               Grid.ColumnSpan="2"
+                               />
+                <Entry Placeholder="Nhập nghề nghiệp..."
+                                Grid.Row="6"
+                               Grid.ColumnSpan="2"
+                               />
+                <Button Text="NEXT"
+                        Clicked="Button_Clicked"
+                                 Grid.Row="8"
+                               Grid.Column="0"
+                                />
+                <Button Text="SKIP"
+                             Clicked="Button_Clicked_1"
+                                 Grid.Row="8"
+                               Grid.Column="1"
+                                />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

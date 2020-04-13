@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatBot.Views.InforPage2">
+    <NavigationPage.TitleView>
+        <Label Text="Chọn giới tính"
+              TextColor="Red"
+               FontAttributes="Bold"
+               FontSize="17" />
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid Margin="20,100,20,50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Image Source="gioitinh.jpg"
+                      Grid.ColumnSpan="2"
+                       Grid.Row="1"/>
+                
+                <Button Text="NEXT"
+                        Grid.Column="0"
+                        Grid.Row="2"
+                        x:Name="btnnextinfor"
+                        Clicked="Btnnextinfor_Clicked"/>
+                <Button Text="SKIP"
+                        Grid.Column="1"
+                        Grid.Row="2"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

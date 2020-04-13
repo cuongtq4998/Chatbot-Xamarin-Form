@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ChatBot.Views.InforPage3">
+    <NavigationPage.TitleView>
+        <Label TextColor="Red"
+                       FontAttributes="Bold"
+                       FontSize="17" 
+                       Text="Thông tin cá nhân"  />
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid  Margin="20,100,20,50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition  Width="AUTO" />
+                    <ColumnDefinition  Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Label FontSize="15" Text="Họ tên :" Grid.Row="0" Margin="40,0,0,10" />
+                <Label FontSize="15" Text="Trần Quốc Cường" Grid.Row="0" Grid.Column="1"/>
+                <Label FontSize="15" Text="Tuổi :" Grid.Row="1" Margin="40,0,0,10" Grid.Column="0" />
+                <Label FontSize="15" Text="21" Grid.Row="1" Grid.Column="1" />
+                <Label FontSize="15" Text="Nghề nghiệp :"  Margin="40,0,0,10" Grid.Row="2" Grid.Column="0" />
+                <Label FontSize="15" Text="Developer" Grid.Row="2" Grid.Column="1" />
+                <Label FontSize="15" Text="Giới tính :"  Margin="40,0,0,10" Grid.Row="3" Grid.Column="0" />
+                <Label FontSize="15" Text="Nam" Grid.Row="3" Grid.Column="1" />
+                <Image Source="chatbot.png"  Grid.ColumnSpan="4" Grid.Row="4"  />
+                <Button   FontSize="15" Text="OK" Grid.Row="5" Grid.Column="0" Margin="20,10,10,20"  Clicked="Btn_chat_Clicked"/>
+                <Button x:Name="btn_chat"  FontSize="15"  Text="CHỈNH SỬA" Grid.Row="5" Grid.Column="1" Margin="20,10,10,20" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content> 
+</ContentPage>
